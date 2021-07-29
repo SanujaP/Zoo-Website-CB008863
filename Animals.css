@@ -1,0 +1,88 @@
+/*mobile first design*/
+.headsH2 {
+  color: whitesmoke;
+  background-color: rgb(14, 1, 1);
+  padding: 0;
+  text-align: center;
+}
+/*everything on this page is responsive and the design doesn't change for the device*/
+.animalP {
+  background-color: rgb(189, 185, 185);
+  text-align: left;
+  color: black;
+  text-decoration: none;
+  padding: 0;
+}
+.animalsBar {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: rgb(219, 204, 204);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+}
+.roundAnimals {
+  display: block;
+  height: 100px;
+  width: 90%;
+  border: solid 0.5px black;
+  border-radius: 50%;
+  max-height: 200px;
+  max-width: 200px;
+  align-items: center;
+}
+
+.plants {
+  border: solid 1px black;
+  width: 100%;
+  background-color: rgb(52, 109, 95);
+}
+th {
+  text-align: center;
+  padding: 2px;
+}
+td {
+  width: 20%;
+  text-align: center;
+  border-bottom: solid 1px black;
+}
+.tdId {
+  width: 60%;
+  text-align: center;
+  border-bottom: solid 1px black;
+}
+.tableImg {
+  width: 60%;
+  height: 200px;
+  border: steelblue solid 0.5px;
+}
+.anH2 {
+  color: whitesmoke;
+  background-color: rgb(14, 1, 1);
+  padding: 0;
+  text-align: center;
+}
+#mainImg {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid black 1px;
+  border-radius: 10px;
+}
+#mainP {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  width: 40%;
+  max-height: 250px;
+  display: inline-block;
+  margin: 4%;
+  border: solid black 1px;
+  border-radius: 5px;
+}

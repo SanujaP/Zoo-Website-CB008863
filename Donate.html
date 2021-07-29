@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="donate.css" />
+    <link rel="stylesheet" href="Animals.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/zooLogo.jpg" />
+    <link rel="stylesheet" href="normalize.css" />
+    <title>Donate - Dehiwala National Zoological Garden</title>
+  </head>
+    
+  <body onload="startupPage()"> 
+  <!--common header and navigation bar-->
+  <section class="stick">
+    <h1 class="mainHeader">Dehiwala National Zoological Gardens Sri Lanka</h1>
+    <nav>
+      <ul class="Nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Animals.html">Animals</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="Donate.html">Donate</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section>
+      <article id="a">
+          <section id="s"> 
+            <h2 class="mainH2">Ticket Booking</h2>
+              <form method="GET">
+                      <fieldset>
+                          <legend>Ticket Details</legend>
+                          <p>
+                            <label for="name">Name :</label>
+                            <input type="text" id="name" name="name" required>
+                          </p>
+                          <p>
+                            <label for="NIC/Passport">NIC/Passport</label>
+                            <input type="text" id="NIC" name="NIC" required>
+                          </p>
+                          <p>
+                            <label class="field" for="day">Day Pass
+                              <input type="radio" id="day" name="ticketChoice" value="day" checked>
+                              <span class="checkmark"></span>
+                            </label>
+                          </p>
+                          <p>
+                            <label class="field" for="student">Student Pass
+                              <input type="radio" id="student" name="ticketChoice" value="student">
+                              <span class="checkmark"></span>
+                            </label>
+                          </p>
+                          <p>
+                            <label class="field" for="foreigner">Foreigner Pass
+                              <input type="radio" id="foreigner" name="ticketChoice" value="foreigner">
+                              <span class="checkmark"></span>
+                            </label>
+                          </p>
+                      </fieldset>
+
+                      <fieldset>
+                          <legend>Number of Tickets</legend>
+                          <p>
+                              <label for="adultTickets">Adults : </label>
+                              <input type="number" id="adultTickets" name="adultTickets" value="0" min="0">
+                          </p>
+                          <p>
+                            <label for="childTickets">Children : </label>
+                            <input type="number" id="childTickets" name="childTickets" value="0" min="0">
+                          </p>
+
+                          <label for="duration">Duration</label>
+                          <div class="select">
+                          <select name="duration" id="duration">
+                            <option value="threeHours">3 Hours</option>
+                            <option value="halfDay">Half A Day</option>
+                            <option value="fullDay" selected>Full Day</option>
+                            <option value="twoDays">Two Days</option>
+                          </select>
+                        </div>
+                      </fieldset>
+
+                      <fieldset>
+                          <legend>Extras</legend>
+                          <p>
+                            <label for="annualPass">Annual Passes : </label>
+                            <input type="number" id="annualPass" name="annualPass" value="0" min="0">
+                          </p>
+                          <p>
+                            <label for="foodToken">Food Tokens : </label>
+                            <input type="number" id="foodToken" name="foodToken" value="0" min="0">
+                          </p>
+                      </fieldset>
+              </form>
+              <button id="addToOrder">Add to Order</button>
+              <button id="favorites">Add to favourites</button>
+              <h2 class="mainH2">Current Order</h2>
+              <textarea name="currentOrderShow" id="currentOrderShow" cols="30" rows="10"></textarea><br>
+              <button id="placeOrder">Place Order</button>
+              <button id="loyalty">Check Loyalty Points</button>
+              <h2 class="mainH2">Final Order</h2>
+              <textarea name="overallOrder" id="overallOrder" cols="30" rows="10"></textarea>
+          </section>
+          <section>
+            <h2 class="mainH2">Donate</h2>
+            <fieldset>
+              <legend>Donation Amount</legend>
+            <form method="GET">
+              <label class="field" for="100">LKR 100
+              <input type="radio" name="amount" id="100">
+              <span class="checkmark"></span>
+              </label>
+              <label class="field" for="250">LKR 250
+              <input type="radio" name="amount" id="250">
+              <span class="checkmark"></span>
+              </label>
+              <label class="field" for="500">LKR 500
+              <input type="radio" name="amount" id="500">
+              <span class="checkmark"></span>
+            </label>
+            <label class="field" for="1000">LKR 1000
+              <input type="radio" name="amount" id="1000" checked>
+              <span class="checkmark"></span>
+            </label>
+            <label class="field" for="2500">LKR 2500
+              <input type="radio" name="amount" id="2500">
+              <span class="checkmark"></span>
+            </label>
+            <label class="field" for="5000">LKR 5000
+              <input type="radio" name="amount" id="5000">
+              <span class="checkmark"></span>
+            </label>
+            <label class="field" for="10000">LKR 10,000
+              <input type="radio" name="amount" id="10000">
+              <span class="checkmark"></span>
+            </label>
+            </form>
+              </fieldset>
+          </section>
+      </article>
+              <fieldset>
+              <legend>Personal Details</legend>
+                          <p>
+                            <label for="donateName">Name :</label>
+                            <input type="text" id="donateName" name="donateName" required>
+                          </p>
+                          <br>
+                          <p>
+                            <label for="donateName">Address :</label>
+                            <input type="text" id="address" name="address" required>
+                          </p>
+                          <p>
+                            <label for="donateName">Credit/Debit Card Number :</label>
+                            <input type="number" id="CCN" name="CCN" required>
+                          </p>
+                          <p>
+                            <label for="donateName">CVV :</label>
+                            <input type="text" id="CVV" name="CVV" placeholder="3 digits on the back of the card." pattern="^[0-9]{3}$" required>
+                          </p>
+                          <br> 
+                          <button id="submit">Submit</button>
+            </fieldset>
+
+          </section>
+ 
+  </section>
+
+    <!--common footer should come here-->
+    <div class="footerClass">
+      <footer>
+        <ul class="footerList1">
+          <h4>Contact Us</h4>
+          <li>
+            <a href="tel:+94112712751"
+              ><img class="footerImg" src="images/call.png" alt="image"
+            /></a>
+          </li>
+          <li>
+            <a href="mailto:zoosl@slt.lk"
+              ><img class="footerImg" src="images/mail.png" alt="image"
+            /></a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <h4 class="footerHead">Developed By</h4>
+          <li>Sanuja Perera</li>
+          <li>
+            Email:
+            <a href="mailto:cb008863@students.apiit.lk"
+              >cb008863@students.apiit.lk</a
+            >
+          </li>
+          <li>Phone: <a href="tel:+94773428891">+9477 342 8891</a></li>
+          <li>Sanuja Perera &copy; 2021, Assignment Prototype</li>
+        </ul>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

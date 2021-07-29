@@ -1,0 +1,151 @@
+/*mobile first design*/
+html {
+  width: 100%;
+}
+/*h1 and h2 styling*/
+#actMain {
+  color: whitesmoke;
+  background-color: rgb(14, 1, 1);
+  padding: 0;
+  text-align: center;
+}
+.showHead {
+  color: whitesmoke;
+  background-color: rgb(14, 1, 1);
+  padding: 0;
+  text-align: center;
+}
+/*for mobile view=grid, desktop=flex*/
+.articleflex {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-self: center;
+  height: 400px;
+}
+.artCol {
+  width: 100%;
+  align-self: center;
+  padding: 0;
+  border: 1px solid black;
+  height: 200px;
+  margin: 0.1%;
+}
+button {
+  background-color: rgb(250, 232, 152);
+  color: darkgreen;
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  margin-bottom: 5px;
+}
+.hoverObject {
+  transition: 0.5s;
+  opacity: 0;
+  position: relative;
+  bottom: 80%;
+  text-align: center;
+  background-color: lightgreen;
+}
+.artCol:hover img {
+  opacity: 0.3;
+}
+.artCol:hover .hoverObject {
+  opacity: 1;
+}
+@media only screen and (min-width: 600px) {
+  .articleflex {
+    display: flex;
+    width: 100%;
+    align-self: center;
+    height: 200px;
+  }
+  .artCol {
+    flex: 100%;
+    width: 100%;
+    align-self: center;
+    padding: 0;
+    border: 2px solid black;
+    flex-direction: column;
+    height: 200px;
+    margin: 0.1%;
+  }
+  .hoverObject {
+    transition: 0.5s;
+    opacity: 0;
+    position: relative;
+    bottom: 80%;
+    text-align: center;
+    background-color: lightgreen;
+  }
+  .artCol:hover img {
+    opacity: 0.3;
+  }
+  .artCol:hover .hoverObject {
+    opacity: 1;
+  }
+}
+/*this images are the ones inside the flex and grid*/
+img {
+  height: 90%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  opacity: 1;
+  transition: 0.5s;
+}
+h4 {
+  text-align: center;
+}
+#partyImg {
+  display: block;
+  height: 40%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.partyP {
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(189, 185, 185);
+}
+.partyList {
+  display: block;
+  list-style-type: circle;
+  background-color: rgb(189, 185, 185);
+  text-align: left;
+  border: black double 2px;
+}
+@media only screen and (min-width: 600px) {
+  #partyImg {
+    display: block;
+    height: 50%;
+    width: 50%;
+    margin-left: 24%;
+    margin-right: 24%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .partyP {
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(189, 185, 185);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .partyList {
+    list-style-type: none;
+    background-color: rgb(189, 185, 185);
+  }
+}
+/*Contact us page direct linked button*/
+.Cus {
+  text-align: center;
+  background-color: lightgreen;
+  color: darkblue;
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 40%;
+  border: 1px solid darkblue;
+}

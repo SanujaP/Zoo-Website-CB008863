@@ -1,0 +1,47 @@
+/*mobile first design*/
+img {
+  width: 5%;
+  height: 5%;
+  background-color: rgb(189, 185, 185);
+}
+.iframe {
+  width: 100%;
+}
+h2 {
+  color: whitesmoke;
+  background-color: rgb(14, 1, 1);
+  padding: 0;
+  text-align: center;
+}
+h3 {
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin-right: 10px;
+}
+button {
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+  width: 50%;
+  border: 1px solid darkblue;
+}
+button:hover {
+  background-color: white;
+  color: black;
+}
+/*for desktops*/
+@media only screen and (min-width: 600px) {
+  img {
+    width: 5%;
+    height: 5%;
+    background-color: rgb(189, 185, 185);
+  }
+  #row {
+    display: flex;
+  }
+  .col {
+    flex: 50%;
+  }
+}

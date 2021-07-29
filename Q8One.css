@@ -1,0 +1,59 @@
+/*mobile first and special design for Q8*/
+/*special navigation with animations*/
+.QNav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(219, 204, 204);
+  width: 100%;
+}
+.QNav li {
+  float: left;
+  width: 20%;
+}
+.QNav li a {
+  display: block;
+  color: rgb(7, 13, 102);
+  text-align: center;
+  padding: 10% 20%;
+  text-decoration: none;
+  font-size: 16px;
+}
+.QNav a:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+#c1H2 {
+  background-color: rgb(61, 124, 61);
+  color: rgb(214, 214, 91);
+  text-align: center;
+  padding: 1em;
+  margin: auto;
+  border: solid 1px green;
+}
+#c1Img {
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  height: auto;
+}
+
+.fee {
+  flex: 50%;
+  padding: 1px;
+  background-color: rgb(154, 207, 154);
+  border: 1px solid darkgreen;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 1px;
+}
+#flexId {
+  display: flex;
+}
+.feeTime {
+  text-align: center;
+  width: 100%;
+}
